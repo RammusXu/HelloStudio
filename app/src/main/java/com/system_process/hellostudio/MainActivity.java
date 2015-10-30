@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -44,6 +45,13 @@ public class MainActivity extends AppCompatActivity {
         menu.add(0, 1, 2, "Two");
         menu.add(0, 2, 1, "Three");
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Toast.makeText(MainActivity.this, item.getTitle(),
+                Toast.LENGTH_SHORT).show();
+        return super.onOptionsItemSelected(item);
     }
 
     public void sendMessage(View view) {
