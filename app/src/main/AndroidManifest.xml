@@ -31,6 +31,9 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/hello_app_widget_info" />
         </receiver>
+
+        <activity android:name="com.system_process.hellostudio.LifecycleActivity" >
+        </activity>
     </application>
 
 </manifest>
