@@ -36,7 +36,31 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(goOtherActivity);
             }
         });
+        Button main_btn_dynamic = (Button) findViewById(R.id.aty_btn_dynamic_activity);
+        main_btn_dynamic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goOtherActivity = new Intent(v.getContext(), DynamicActivity.class);
+                //可放所有基本類別
+                goOtherActivity.putExtra("name", "Eaway"); // String
+                goOtherActivity.putExtra("age", 18); // int
 
+//                startActivity(goOtherActivity);
+                startActivityForResult(goOtherActivity, 567); // 567 為 requestCode(識別碼)
+            }
+        });
+
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case 567:
+                if (resultCode == RESULT_OK) {
+                    String result = data.getExtras().getString("fullname");
+                    Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
+                }
+                break;
+        }
     }
 
     @Override
