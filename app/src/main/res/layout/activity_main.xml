@@ -56,7 +56,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Relative Button"
-        android:onClick="sendMessage"
         android:id="@+id/relataive_btn" />
 
 
@@ -64,7 +63,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Frame Button"
-        android:onClick="sendMessage"
         android:id="@+id/frame_btn" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dynamic Activity"
+        android:id="@+id/aty_btn_dynamic_activity" />
 
 </LinearLayout>
