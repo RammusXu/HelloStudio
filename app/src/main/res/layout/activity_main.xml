@@ -18,37 +18,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/aty_et_msg"
         android:layout_gravity="center_horizontal" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText2" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="numberPassword"
-        android:ems="10"
-        android:id="@+id/editText3" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/editText4" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Send"
-        android:onClick="sendMessage"
-        android:id="@+id/button" />
+        android:onClick="sendMessage" />
 
 
 
@@ -71,5 +48,13 @@
         android:layout_height="wrap_content"
         android:text="Dynamic Activity"
         android:id="@+id/aty_btn_dynamic_activity" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class4 Try Intent"
+        android:onClick="clickIntent"
+        android:id="@+id/aty_btn_intent" />
 
 </LinearLayout>

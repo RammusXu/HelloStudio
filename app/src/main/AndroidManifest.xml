@@ -35,6 +35,9 @@
         <activity android:name="com.system_process.hellostudio.LifecycleActivity" >
         </activity>
         <activity android:name="com.system_process.hellostudio.DynamicActivity" >
+            <intent-filter>
+                <action android:name="Intent.ACTION_VIEW_EAWAY"/>
+            </intent-filter>
         </activity>
     </application>
 
