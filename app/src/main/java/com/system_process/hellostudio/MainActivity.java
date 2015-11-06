@@ -1,6 +1,7 @@
 package com.system_process.hellostudio;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
@@ -79,14 +81,40 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendMessage(View view) {
-        String s  ="cool";
+        String s = "cool";
         //Toast.LENGTH_LONG表示顯示時間較長，Toast.LENGTH_SHORT則表示顯示時間較短
         Toast.makeText(view.getContext(), "這是一個Toast......", Toast.LENGTH_LONG).show();
         Log.d("HI", "sendMessage() returned: " + "this is log");
         Log.d("NiceTag", "sendMessage() returned: " + s);
     }
 
+    public void clickIntent(View view) {
+//        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.asus.com/"));
+//        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:0955038039"));
+//        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:eaway_lu@asus.com"));
+//        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("content://contacts/people/1"));
+//        Intent intent = new Intent(Intent.ACTION_EDIT, Uri.parse("content://contacts/people/1"));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:23.5646155,119.5641291"));
+//        Intent intent = new Intent("Intent.ACTION_VIEW_EAWAY");
+
+        startActivity(intent);
+
+//        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.asus.com/"));
+//        Intent chooser = Intent.createChooser(intent, "Please choose an app");
+//        startActivity(chooser);
 
 
+//        String textMessage = "hi";
+//        // Create the text message with a string
+//        Intent sendIntent = new Intent();
+//        sendIntent.setAction(Intent.ACTION_SEND);
+//        sendIntent.putExtra(Intent.EXTRA_TEXT, textMessage);
+//        sendIntent.setType("text/plain");
+//
+//        // Verify that the intent will resolve to an activity
+//        if (sendIntent.resolveActivity(getPackageManager()) != null) {
+//            startActivity(sendIntent);
+//        }
+    }
 
 }
