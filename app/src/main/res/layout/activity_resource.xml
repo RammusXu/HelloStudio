@@ -3,6 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.system_process.hellostudio.layout.ResourceActivity">
+    tools:context="com.system_process.hellostudio.layout.ResourceActivity"
+    android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/aty_resource_tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resultMsg" />
+
+    <TextView
+        android:id="@+id/aty_resource_tv2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/myMsg" />
 </LinearLayout>
