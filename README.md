@@ -1,5 +1,4 @@
 # HelloStudio
-Android Studio Tutorial
 
 classxx : 每一堂課的code base, checkout from master(上週做完的hw)
 
