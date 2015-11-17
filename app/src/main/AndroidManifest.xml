@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.asus.amax.hellostudio" >
+    package="com.asus.amax.hellostudio">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name="com.system_process.hellostudio.MainActivity" >
+        android:theme="@style/AppTheme">
+        <activity android:name="com.system_process.hellostudio.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +22,7 @@
             android:name="com.system_process.hellostudio.layout.FrameActivity"
             android:label="FrameActivity" />
 
-        <receiver android:name="com.system_process.hellostudio.HelloAppWidget" >
+        <receiver android:name="com.system_process.hellostudio.HelloAppWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -32,13 +32,13 @@
                 android:resource="@xml/hello_app_widget_info" />
         </receiver>
 
-        <activity android:name="com.system_process.hellostudio.LifecycleActivity" >
-        </activity>
-        <activity android:name="com.system_process.hellostudio.DynamicActivity" >
+        <activity android:name="com.system_process.hellostudio.LifecycleActivity"></activity>
+        <activity android:name="com.system_process.hellostudio.DynamicActivity">
             <intent-filter>
-                <action android:name="Intent.ACTION_VIEW_EAWAY"/>
+                <action android:name="Intent.ACTION_VIEW_EAWAY" />
             </intent-filter>
         </activity>
+        <activity android:name="com.system_process.hellostudio.layout.ResourceActivity"></activity>
     </application>
 
 </manifest>

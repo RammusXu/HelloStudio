@@ -3,4 +3,7 @@
     <string name="activity_main_tv_hello">Hello World!</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
+
+    <string name="resultMsg">你的得分為: %1$d 分</string>
+    <string name="myMsg">%1$s 擁有 %2$s</string>
 </resources>
