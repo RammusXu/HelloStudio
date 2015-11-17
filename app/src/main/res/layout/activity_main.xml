@@ -57,4 +57,11 @@
         android:onClick="clickIntent"
         android:id="@+id/aty_btn_intent" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class5 Resource"
+        android:onClick="clickClass5"
+        android:id="@+id/aty_btn_class5" />
+
 </LinearLayout>

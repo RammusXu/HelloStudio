@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.asus.amax.hellostudio.R;
 import com.system_process.hellostudio.layout.FrameActivity;
 import com.system_process.hellostudio.layout.RelativeActivity;
+import com.system_process.hellostudio.layout.ResourceActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -115,6 +116,10 @@ public class MainActivity extends AppCompatActivity {
 //        if (sendIntent.resolveActivity(getPackageManager()) != null) {
 //            startActivity(sendIntent);
 //        }
+    }
+
+    public void clickClass5(View view){
+        startActivity(new Intent(MainActivity.this, ResourceActivity.class));
     }
 
 }
