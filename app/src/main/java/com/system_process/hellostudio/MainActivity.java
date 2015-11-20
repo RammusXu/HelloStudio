@@ -122,4 +122,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, ResourceActivity.class));
     }
 
+    public void clickClass6(View view){
+        startActivity(new Intent(MainActivity.this, ReceiverActivity.class));
+    }
 }

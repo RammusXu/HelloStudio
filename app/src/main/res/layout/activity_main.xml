@@ -61,5 +61,10 @@
         android:layout_height="wrap_content"
         android:onClick="clickClass5"
         android:text="Class5 Resource" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickClass6"
+        android:text="Class6 Receiver" />
 
 </LinearLayout>
