@@ -47,10 +47,26 @@
             android:enabled="true"
             android:exported="true" >
             <intent-filter>
-                <action android:name="android.media.VOLUME_CHANGED_ACTION">
+                <action android:name="android.media.VOLUME_CHANGED_ACTION" >
                 </action>
             </intent-filter>
         </receiver>
+
+        <activity android:name="com.system_process.hellostudio.storage.MyClientActivity" >
+        </activity>
+        <activity android:name="com.system_process.hellostudio.storage.MyCloudActivity" >
+        </activity>
+
+        <provider
+            android:name="com.system_process.hellostudio.storage.MyCloudProvider"
+            android:authorities="com.system_process.hellostudio.documents"
+            android:grantUriPermissions="true"
+            android:exported="true"
+            android:permission="android.permission.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER"/>
+            </intent-filter>
+        </provider>
     </application>
 
 </manifest>

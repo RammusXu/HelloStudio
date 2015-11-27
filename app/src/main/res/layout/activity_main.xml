@@ -10,6 +10,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,10 +71,25 @@
         android:layout_height="wrap_content"
         android:onClick="clickClass5"
         android:text="Class5 Resource" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="clickClass6"
         android:text="Class6 Receiver" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickClass7"
+        android:text="Class7 Client" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickClass7_2"
+        android:text="Class7_2 Cloud" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
